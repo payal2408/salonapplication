@@ -8,6 +8,7 @@ class SalonsController < ApplicationController
 
   # GET /salons/1 or /salons/1.json
   def show
+    @chairs = Chair.all
   end
 
   # GET /salons/new

@@ -1,3 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Chairs</h1>
 
 <table>
   <thead>
@@ -24,19 +27,3 @@
 <br>
 
 <%= link_to 'New Chair', new_chair_path %>
-<div class="container-fluid">
-  <div class="col-12 mt-5">
-    <div class="row">
-      <% @chairs.each do |chair| %>
-      <div class="col-4 mx-auto">
-        <div class="card shadow text-center height">
-            <%= chair.char_name %>
-        </div>
-            <div>
-              <%#= link_to 'Veiw', salon, class: "btn bg-primary mt-2" %>
-            </div>
-      </div>
-      <% end %>   
-    </div>
-  </div>
-</div>

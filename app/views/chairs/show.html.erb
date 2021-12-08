@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Char name:</strong>
+  <%= @chair.char_name %>
+</p>
+
+<p>
+  <strong>Salon:</strong>
+  <%= @chair.salon_id %>
+</p>
+
+<%= link_to 'Edit', edit_chair_path(@chair) %> |
+<%= link_to 'Back', chairs_path %>
